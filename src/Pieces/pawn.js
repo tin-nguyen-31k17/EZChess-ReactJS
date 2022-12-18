@@ -14,7 +14,7 @@ export default class Pawn extends Piece {
             if((dest === src - 8 && !isDestEnemyOccupied) || (dest === src - 16 && this.initialPositions[1].indexOf(src) !== -1)){
                 return true;
             }
-            else of (isDestEnemyOccupied && (dest === src - 9 || dest === src - 7)){
+            else if(isDestEnemyOccupied && (dest === src - 9 || dest === src - 7)){
                 return true;
             }
         }
